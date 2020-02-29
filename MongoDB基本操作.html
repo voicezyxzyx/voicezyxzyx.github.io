@@ -114,18 +114,18 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
 
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="一、操作MongoDB数据库1、创建数据库语法：use 数据库名 注意：如果数据库不存在，则创建，否则切换到该数据库 如果刚才创建的数据库不在列表内，如果要显示刚创建的数据库，我们需要向刚创建的数据库插入一些数据  (db.student.insert({name:&quot;tom&quot;,age:18,gender:1,address：&quot;北京&quot;,isDelete:0})">
+  <meta name="description" content="一、操作MongoDB数据库1、创建数据库语法：use 数据库名 注意：如果数据库不存在，则创建，否则切换到该数据库 如果刚才创建的数据库不在列表内，如果要显示刚创建的数据库，我们需要向刚创建的数据库插入一些数据  (db.student.insert({name:&amp;quot;tom&amp;quot;,age:18,gender:1,address：&amp;quot;北京&amp;quot;,isDelete:0})">
+<meta name="keywords" content="MongoDB">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MongoDB基本操作">
-<meta property="og:url" content="http://voicezyx.top/MongoDB%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html">
+<meta property="og:url" content="http://voicezyx.top/MongoDB基本操作.html">
 <meta property="og:site_name" content="voicezyx&#39;s Blog">
-<meta property="og:description" content="一、操作MongoDB数据库1、创建数据库语法：use 数据库名 注意：如果数据库不存在，则创建，否则切换到该数据库 如果刚才创建的数据库不在列表内，如果要显示刚创建的数据库，我们需要向刚创建的数据库插入一些数据  (db.student.insert({name:&quot;tom&quot;,age:18,gender:1,address：&quot;北京&quot;,isDelete:0})">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2018-09-15T04:31:44.000Z">
-<meta property="article:modified_time" content="2018-09-15T04:31:44.000Z">
-<meta property="article:author" content="voicezyx">
-<meta property="article:tag" content="MongoDB">
+<meta property="og:description" content="一、操作MongoDB数据库1、创建数据库语法：use 数据库名 注意：如果数据库不存在，则创建，否则切换到该数据库 如果刚才创建的数据库不在列表内，如果要显示刚创建的数据库，我们需要向刚创建的数据库插入一些数据  (db.student.insert({name:&amp;quot;tom&amp;quot;,age:18,gender:1,address：&amp;quot;北京&amp;quot;,isDelete:0})">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-15T04:31:43.239Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MongoDB基本操作">
+<meta name="twitter:description" content="一、操作MongoDB数据库1、创建数据库语法：use 数据库名 注意：如果数据库不存在，则创建，否则切换到该数据库 如果刚才创建的数据库不在列表内，如果要显示刚创建的数据库，我们需要向刚创建的数据库插入一些数据  (db.student.insert({name:&amp;quot;tom&amp;quot;,age:18,gender:1,address：&amp;quot;北京&amp;quot;,isDelete:0})">
 
 
 
@@ -182,7 +182,14 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
+
+
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -240,9 +247,17 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
         
         
           
-          <li class="menu-item menu-item-board">
-    <a href="/board/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />board</a>
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
   </li>
         
         
@@ -259,22 +274,6 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-    <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
   </li>
 
       
@@ -356,7 +355,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/MongoDB%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/MongoDB基本操作.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="voicezyx">
@@ -398,9 +397,13 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
                 
               
 
-              <time title="创建时间：2018-09-15 12:31:44" itemprop="dateCreated datePublished" datetime="2018-09-15T12:31:44+08:00">2018-09-15</time>
+              <time title="创建时间：2018-09-15 15:05:36 / 修改时间：12:31:43" itemprop="dateCreated datePublished" datetime="2018-09-15T15:05:36+08:00">2018-09-15</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -463,22 +466,33 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
       
         <h2 id="一、操作MongoDB数据库"><a href="#一、操作MongoDB数据库" class="headerlink" title="一、操作MongoDB数据库"></a>一、操作MongoDB数据库</h2><h3 id="1、创建数据库"><a href="#1、创建数据库" class="headerlink" title="1、创建数据库"></a>1、创建数据库</h3><pre><code>语法：use 数据库名
 注意：如果数据库不存在，则创建，否则切换到该数据库
-如果刚才创建的数据库不在列表内，如果要显示刚创建的数据库，我们需要向刚创建的数据库插入一些数据  (db.student.insert({name:&quot;tom&quot;,age:18,gender:1,address：&quot;北京&quot;,isDelete:0}))</code></pre><h3 id="2、删除数据库"><a href="#2、删除数据库" class="headerlink" title="2、删除数据库"></a>2、删除数据库</h3><pre><code>前提：必须正在使用要删除的数据库
-db.dropDatabase()</code></pre><h3 id="3、查看所有数据"><a href="#3、查看所有数据" class="headerlink" title="3、查看所有数据"></a>3、查看所有数据</h3><pre><code>show dbs</code></pre><h3 id="4、查看当前正在使用的数据库"><a href="#4、查看当前正在使用的数据库" class="headerlink" title="4、查看当前正在使用的数据库"></a>4、查看当前正在使用的数据库</h3><pre><code>db
-db.getName()</code></pre><h3 id="5、断开连接"><a href="#5、断开连接" class="headerlink" title="5、断开连接"></a>5、断开连接</h3><pre><code>exit</code></pre><h3 id="6、查看命令API："><a href="#6、查看命令API：" class="headerlink" title="6、查看命令API："></a>6、查看命令API：</h3><pre><code>help</code></pre><h2 id="二、集合操作"><a href="#二、集合操作" class="headerlink" title="二、集合操作"></a>二、集合操作</h2><h3 id="1、查看当前数据库下有哪些集合"><a href="#1、查看当前数据库下有哪些集合" class="headerlink" title="1、查看当前数据库下有哪些集合"></a>1、查看当前数据库下有哪些集合</h3><pre><code>show collections</code></pre><h3 id="2、创建集合"><a href="#2、创建集合" class="headerlink" title="2、创建集合"></a>2、创建集合</h3><pre><code>a、
+如果刚才创建的数据库不在列表内，如果要显示刚创建的数据库，我们需要向刚创建的数据库插入一些数据  (db.student.insert({name:&quot;tom&quot;,age:18,gender:1,address：&quot;北京&quot;,isDelete:0}))
+</code></pre><h3 id="2、删除数据库"><a href="#2、删除数据库" class="headerlink" title="2、删除数据库"></a>2、删除数据库</h3><pre><code>前提：必须正在使用要删除的数据库
+db.dropDatabase()
+</code></pre><h3 id="3、查看所有数据"><a href="#3、查看所有数据" class="headerlink" title="3、查看所有数据"></a>3、查看所有数据</h3><pre><code>show dbs
+</code></pre><h3 id="4、查看当前正在使用的数据库"><a href="#4、查看当前正在使用的数据库" class="headerlink" title="4、查看当前正在使用的数据库"></a>4、查看当前正在使用的数据库</h3><pre><code>db
+db.getName()
+</code></pre><h3 id="5、断开连接"><a href="#5、断开连接" class="headerlink" title="5、断开连接"></a>5、断开连接</h3><pre><code>exit
+</code></pre><h3 id="6、查看命令API："><a href="#6、查看命令API：" class="headerlink" title="6、查看命令API："></a>6、查看命令API：</h3><pre><code>help
+</code></pre><h2 id="二、集合操作"><a href="#二、集合操作" class="headerlink" title="二、集合操作"></a>二、集合操作</h2><h3 id="1、查看当前数据库下有哪些集合"><a href="#1、查看当前数据库下有哪些集合" class="headerlink" title="1、查看当前数据库下有哪些集合"></a>1、查看当前数据库下有哪些集合</h3><pre><code>show collections
+</code></pre><h3 id="2、创建集合"><a href="#2、创建集合" class="headerlink" title="2、创建集合"></a>2、创建集合</h3><pre><code>a、
 语法：db.createCollection(&quot;集合名&quot;)
 示例：db.createCollection(&quot;class&quot;)
 b、
 语法：db.集合名.insert(document)
 示例：db.student.insert({name:&quot;tom&quot;,age:18,gender:1,address：&quot;北京&quot;,isDelete:0})
-区别：前者创建的是一个空的集合，后者创建一个空的集合并添加一个文档</code></pre><h3 id="3、删除当前数据库中的集合"><a href="#3、删除当前数据库中的集合" class="headerlink" title="3、删除当前数据库中的集合"></a>3、删除当前数据库中的集合</h3><pre><code>语法：db.集合名.drop()</code></pre><h2 id="三、文档操作"><a href="#三、文档操作" class="headerlink" title="三、文档操作"></a>三、文档操作</h2><h3 id="1、插入文档"><a href="#1、插入文档" class="headerlink" title="1、插入文档"></a>1、插入文档</h3><h4 id="1、使用insert-方法插入文档"><a href="#1、使用insert-方法插入文档" class="headerlink" title="1、使用insert()方法插入文档"></a>1、使用insert()方法插入文档</h4><pre><code>语法：db.集合名.insert(文档)
+区别：前者创建的是一个空的集合，后者创建一个空的集合并添加一个文档
+</code></pre><h3 id="3、删除当前数据库中的集合"><a href="#3、删除当前数据库中的集合" class="headerlink" title="3、删除当前数据库中的集合"></a>3、删除当前数据库中的集合</h3><pre><code>语法：db.集合名.drop()
+</code></pre><h2 id="三、文档操作"><a href="#三、文档操作" class="headerlink" title="三、文档操作"></a>三、文档操作</h2><h3 id="1、插入文档"><a href="#1、插入文档" class="headerlink" title="1、插入文档"></a>1、插入文档</h3><h4 id="1、使用insert-方法插入文档"><a href="#1、使用insert-方法插入文档" class="headerlink" title="1、使用insert()方法插入文档"></a>1、使用insert()方法插入文档</h4><pre><code>语法：db.集合名.insert(文档)
 插入一个：
 示例：db.student.insert({name:&quot;jack&quot;,age:18,gender:1,address：&quot;北京&quot;,isDelete:0})
 插入多条：db.集合名.insert([文档1,文档2])
-示例：db.student.insert([{name:&quot;z&quot;,age:17,gender:0,address:&quot;杭州&quot;,isDelete:0},{name:&quot;zz&quot;,age:25,gender:0,address:&quot;上海&quot;,isDelete:0}])</code></pre><h4 id="2、使用save-方法插入文档"><a href="#2、使用save-方法插入文档" class="headerlink" title="2、使用save()方法插入文档"></a>2、使用save()方法插入文档</h4><pre><code>语法：db.集合名.save(文档)
+示例：db.student.insert([{name:&quot;z&quot;,age:17,gender:0,address:&quot;杭州&quot;,isDelete:0},{name:&quot;zz&quot;,age:25,gender:0,address:&quot;上海&quot;,isDelete:0}])
+</code></pre><h4 id="2、使用save-方法插入文档"><a href="#2、使用save-方法插入文档" class="headerlink" title="2、使用save()方法插入文档"></a>2、使用save()方法插入文档</h4><pre><code>语法：db.集合名.save(文档)
 注意：如果不指定_id字段，save()方法类似于insert()方法，如果指定_id字段，则会更新_id字段的数据
 没有指定_id字段（和insert方法效果一样）：db.student.insert({name:&quot;jack&quot;,age:18,gender:1,address：&quot;北京&quot;,isDelete:0})
-指定_id字段：        db.student.save({_id:ObjectId(&quot;5b753350178db1d794e3f06f&quot;),&quot;name&quot;:&quot;tom&quot;,&quot;age&quot;:23,&quot;gender&quot;:1.0,&quot;address&quot;:&quot;上海&quot;,&quot;isDelete&quot;:0.0})</code></pre><h3 id="2、文档更新"><a href="#2、文档更新" class="headerlink" title="2、文档更新"></a>2、文档更新</h3><h4 id="1、update-方法-用于更新以存在的文档"><a href="#1、update-方法-用于更新以存在的文档" class="headerlink" title="1、update()方法  用于更新以存在的文档"></a>1、update()方法  用于更新以存在的文档</h4><pre><code>    语法：db.集合名.update(
+指定_id字段：        db.student.save({_id:ObjectId(&quot;5b753350178db1d794e3f06f&quot;),&quot;name&quot;:&quot;tom&quot;,&quot;age&quot;:23,&quot;gender&quot;:1.0,&quot;address&quot;:&quot;上海&quot;,&quot;isDelete&quot;:0.0})
+</code></pre><h3 id="2、文档更新"><a href="#2、文档更新" class="headerlink" title="2、文档更新"></a>2、文档更新</h3><h4 id="1、update-方法-用于更新以存在的文档"><a href="#1、update-方法-用于更新以存在的文档" class="headerlink" title="1、update()方法  用于更新以存在的文档"></a>1、update()方法  用于更新以存在的文档</h4><pre><code>    语法：db.集合名.update(
                     query,
                     update,
                     {
@@ -494,22 +508,36 @@ b、
     multi:可选，mongodb默认是false，只更新找到的第一条记录，如果这个参数为true，就按照条件查找出来的数据全部更新。
     writeConcern:可选，抛出异常的级别，
 示例：
-db.student.update({name:&quot;jack&quot;},{$set:{age:25}})</code></pre><p>​    如果想让匹配到的内容全部修改：<br>    db.student.update({name:”jack”},{$set:{age:25}}，{multi:true})</p>
+db.student.update({name:&quot;jack&quot;},{$set:{age:25}})
+</code></pre><p>​    如果想让匹配到的内容全部修改：<br>    db.student.update({name:”jack”},{$set:{age:25}}，{multi:true})</p>
 <h4 id="2、save-方法-用过传入的文档替换原来的文档"><a href="#2、save-方法-用过传入的文档替换原来的文档" class="headerlink" title="2、save()方法  用过传入的文档替换原来的文档"></a>2、save()方法  用过传入的文档替换原来的文档</h4><pre><code>语法：db.集合名.save(document,{writeConcern:&lt;document&gt;})
 参数说明：document：文档数据
-        writeConcern:可选，抛出异常的级别</code></pre><h3 id="3、文档删除"><a href="#3、文档删除" class="headerlink" title="3、文档删除"></a>3、文档删除</h3><pre><code>在执行remove()函数前，先执行find()命令来判断执行的条件是否存在
+        writeConcern:可选，抛出异常的级别
+</code></pre><h3 id="3、文档删除"><a href="#3、文档删除" class="headerlink" title="3、文档删除"></a>3、文档删除</h3><pre><code>在执行remove()函数前，先执行find()命令来判断执行的条件是否存在
 语法:
 db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;})
 参数说明：query:可选，删除的文档的条件
         justOne:可选，如果为true或1，则只删除一个文档
-示例：db.student.remove({name:&quot;tom&quot;})</code></pre><h3 id="4、文档查询"><a href="#4、文档查询" class="headerlink" title="4、文档查询"></a>4、文档查询</h3><h4 id="1、find-方法-查询集合下所有文档"><a href="#1、find-方法-查询集合下所有文档" class="headerlink" title="1、find()方法  查询集合下所有文档"></a>1、find()方法  查询集合下所有文档</h4><pre><code>db.集合名.find()</code></pre><h4 id="2、find-方法-查询指定列"><a href="#2、find-方法-查询指定列" class="headerlink" title="2、find()方法  查询指定列"></a>2、find()方法  查询指定列</h4><pre><code>db.集合名.find(query,{&lt;key&gt;:1,&lt;key&gt;:1})
+示例：db.student.remove({name:&quot;tom&quot;})
+</code></pre><h3 id="4、文档查询"><a href="#4、文档查询" class="headerlink" title="4、文档查询"></a>4、文档查询</h3><h4 id="1、find-方法-查询集合下所有文档"><a href="#1、find-方法-查询集合下所有文档" class="headerlink" title="1、find()方法  查询集合下所有文档"></a>1、find()方法  查询集合下所有文档</h4><pre><code>db.集合名.find()
+</code></pre><h4 id="2、find-方法-查询指定列"><a href="#2、find-方法-查询指定列" class="headerlink" title="2、find()方法  查询指定列"></a>2、find()方法  查询指定列</h4><pre><code>db.集合名.find(query,{&lt;key&gt;:1,&lt;key&gt;:1})
 
 示例：db.student.find({gender:1.0},{name:1,age:1})
-参数说明：query:查询条件  可以不写查询条件（即全查） key: 1 表示显示</code></pre><h4 id="3、pretty-方法-以格式化的方式来显示文档"><a href="#3、pretty-方法-以格式化的方式来显示文档" class="headerlink" title="3、pretty()方法 以格式化的方式来显示文档"></a>3、pretty()方法 以格式化的方式来显示文档</h4><pre><code>db.student.find().pretty()</code></pre><h4 id="4、findOne-方法-查询匹配结果的第一条语句"><a href="#4、findOne-方法-查询匹配结果的第一条语句" class="headerlink" title="4、findOne()方法  查询匹配结果的第一条语句"></a>4、findOne()方法  查询匹配结果的第一条语句</h4><pre><code>db.student.findOne({gender:0})</code></pre><h3 id="5、查询条件操作符："><a href="#5、查询条件操作符：" class="headerlink" title="5、查询条件操作符："></a>5、查询条件操作符：</h3><p>作用：条件操作符用于比较两个表达式并从mongodb集合中获取数据<br>    1、大于： $gt<br>        语法: db.集合名.find({<key>:{$gt:<value>}})<br>        示例：db.student.find({age:{$gt:19}})<br>    2、大于等于：  $gte<br>        语法: db.集合名.find({<key>:{$gte:<value>}})<br>    3、小于：  $lt<br>        语法: db.集合名.find({<key>:{$lt:<value>}})<br>    4、小于等于： $lte<br>        语法: db.集合名.find({<key>:{$lte:<value>}})<br>    5、大于等于 和 小于等于：  $gt 和  $lte<br>        语法: db.集合名.find({<key>:{$gte:<value>,$lte:<value>}})<br>    6、等于：   ：<br>    7、使用_id进行查询<br>        语法：db.集合名.find({“_id”:ObjectId(“id值”)})<br>    8、查询某个结果集的数据条数<br>        db.集合名.find().count()<br>    9、查询否个字段的值当中是否包含另一个值<br>        示例：db.集合名.find(name:/ile/)  查询集合中名字是否有包含‘ile’字符的<br>    10、查询某个字段的值是否以另一个值开头<br>        示例：db.集合名.find(name:/^li/)  查询集合中名字是否有以‘li’字符开头的</p>
-<h3 id="6、条件查询and-和-or"><a href="#6、条件查询and-和-or" class="headerlink" title="6、条件查询and 和 or"></a>6、条件查询and 和 or</h3><h4 id="1、and条件"><a href="#1、and条件" class="headerlink" title="1、and条件"></a>1、and条件</h4><pre><code>语法：db.集合名.find({条件1，条件2，......条件n})</code></pre><h4 id="2、or条件"><a href="#2、or条件" class="headerlink" title="2、or条件"></a>2、or条件</h4><pre><code>语法：db.集合名.find({$or:[{条件1}，{条件2}，......{条件n}]})
-示例：db.student.find({$or:[{age:17},{age:{$gte:19}}]})      查找年龄为17 或者 年龄的大于19的</code></pre><h4 id="3、and和or联合使用"><a href="#3、and和or联合使用" class="headerlink" title="3、and和or联合使用"></a>3、and和or联合使用</h4><pre><code>语法：db.集合名.find({条件1，条件2，$or:[{条件3，条件4}]})</code></pre><h3 id="7、limit、skip"><a href="#7、limit、skip" class="headerlink" title="7、limit、skip"></a>7、limit、skip</h3><h4 id="1、limit-方法：读取指定数量的数据记录"><a href="#1、limit-方法：读取指定数量的数据记录" class="headerlink" title="1、limit()方法：读取指定数量的数据记录"></a>1、limit()方法：读取指定数量的数据记录</h4><pre><code>示例：db.集合名.find().limit(2)   查看集合里的两条数据</code></pre><h4 id="2、skip-方法：跳过指定数量的数据"><a href="#2、skip-方法：跳过指定数量的数据" class="headerlink" title="2、skip()方法：跳过指定数量的数据"></a>2、skip()方法：跳过指定数量的数据</h4><pre><code>示例：db.集合名.find().skip(2)  跳过两条数据读取下边的其他数据</code></pre><h4 id="3、limit与skip联合使用"><a href="#3、limit与skip联合使用" class="headerlink" title="3、limit与skip联合使用"></a>3、limit与skip联合使用</h4><pre><code>通常用这种方式来实现分页功能 示例：db.集合名.find().skip(2).limit(2)
-越过两条数据在取两条数据</code></pre><h3 id="8、排序"><a href="#8、排序" class="headerlink" title="8、排序"></a>8、排序</h3><pre><code>语法：db.集合名.find().sort({&lt;key&gt;:1|-1})  1 表示升序  -1表示降序
-示例：db.集合名.find().sort({age:1})  按年龄升序排</code></pre><script> (function(){     var bp = document.createElement('script');     var curProtocol = window.location.protocol.split(':')[0];     if (curProtocol === 'https'){    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';   }   else{   bp.src = 'http://push.zhanzhang.baidu.com/push.js';   }     var s = document.getElementsByTagName("script")[0];     s.parentNode.insertBefore(bp, s); })(); </script> 
+参数说明：query:查询条件  可以不写查询条件（即全查） key: 1 表示显示
+</code></pre><h4 id="3、pretty-方法-以格式化的方式来显示文档"><a href="#3、pretty-方法-以格式化的方式来显示文档" class="headerlink" title="3、pretty()方法 以格式化的方式来显示文档"></a>3、pretty()方法 以格式化的方式来显示文档</h4><pre><code>db.student.find().pretty()
+</code></pre><h4 id="4、findOne-方法-查询匹配结果的第一条语句"><a href="#4、findOne-方法-查询匹配结果的第一条语句" class="headerlink" title="4、findOne()方法  查询匹配结果的第一条语句"></a>4、findOne()方法  查询匹配结果的第一条语句</h4><pre><code>db.student.findOne({gender:0})
+</code></pre><h3 id="5、查询条件操作符："><a href="#5、查询条件操作符：" class="headerlink" title="5、查询条件操作符："></a>5、查询条件操作符：</h3><p>作用：条件操作符用于比较两个表达式并从mongodb集合中获取数据<br>    1、大于： $gt<br>        语法: db.集合名.find({<key>:{$gt:<value>}})<br>        示例：db.student.find({age:{$gt:19}})<br>    2、大于等于：  $gte<br>        语法: db.集合名.find({<key>:{$gte:<value>}})<br>    3、小于：  $lt<br>        语法: db.集合名.find({<key>:{$lt:<value>}})<br>    4、小于等于： $lte<br>        语法: db.集合名.find({<key>:{$lte:<value>}})<br>    5、大于等于 和 小于等于：  $gt 和  $lte<br>        语法: db.集合名.find({<key>:{$gte:<value>,$lte:<value>}})<br>    6、等于：   ：<br>    7、使用_id进行查询<br>        语法：db.集合名.find({“_id”:ObjectId(“id值”)})<br>    8、查询某个结果集的数据条数<br>        db.集合名.find().count()<br>    9、查询否个字段的值当中是否包含另一个值<br>        示例：db.集合名.find(name:/ile/)  查询集合中名字是否有包含‘ile’字符的<br>    10、查询某个字段的值是否以另一个值开头<br>        示例：db.集合名.find(name:/^li/)  查询集合中名字是否有以‘li’字符开头的</value></value></key></value></key></value></key></value></key></value></key></p>
+<h3 id="6、条件查询and-和-or"><a href="#6、条件查询and-和-or" class="headerlink" title="6、条件查询and 和 or"></a>6、条件查询and 和 or</h3><h4 id="1、and条件"><a href="#1、and条件" class="headerlink" title="1、and条件"></a>1、and条件</h4><pre><code>语法：db.集合名.find({条件1，条件2，......条件n})
+</code></pre><h4 id="2、or条件"><a href="#2、or条件" class="headerlink" title="2、or条件"></a>2、or条件</h4><pre><code>语法：db.集合名.find({$or:[{条件1}，{条件2}，......{条件n}]})
+示例：db.student.find({$or:[{age:17},{age:{$gte:19}}]})      查找年龄为17 或者 年龄的大于19的
+</code></pre><h4 id="3、and和or联合使用"><a href="#3、and和or联合使用" class="headerlink" title="3、and和or联合使用"></a>3、and和or联合使用</h4><pre><code>语法：db.集合名.find({条件1，条件2，$or:[{条件3，条件4}]})
+</code></pre><h3 id="7、limit、skip"><a href="#7、limit、skip" class="headerlink" title="7、limit、skip"></a>7、limit、skip</h3><h4 id="1、limit-方法：读取指定数量的数据记录"><a href="#1、limit-方法：读取指定数量的数据记录" class="headerlink" title="1、limit()方法：读取指定数量的数据记录"></a>1、limit()方法：读取指定数量的数据记录</h4><pre><code>示例：db.集合名.find().limit(2)   查看集合里的两条数据
+</code></pre><h4 id="2、skip-方法：跳过指定数量的数据"><a href="#2、skip-方法：跳过指定数量的数据" class="headerlink" title="2、skip()方法：跳过指定数量的数据"></a>2、skip()方法：跳过指定数量的数据</h4><pre><code>示例：db.集合名.find().skip(2)  跳过两条数据读取下边的其他数据
+</code></pre><h4 id="3、limit与skip联合使用"><a href="#3、limit与skip联合使用" class="headerlink" title="3、limit与skip联合使用"></a>3、limit与skip联合使用</h4><pre><code>通常用这种方式来实现分页功能 示例：db.集合名.find().skip(2).limit(2)
+越过两条数据在取两条数据
+</code></pre><h3 id="8、排序"><a href="#8、排序" class="headerlink" title="8、排序"></a>8、排序</h3><pre><code>语法：db.集合名.find().sort({&lt;key&gt;:1|-1})  1 表示升序  -1表示降序
+示例：db.集合名.find().sort({age:1})  按年龄升序排
+</code></pre><script> (function(){     var bp = document.createElement('script');     var curProtocol = window.location.protocol.split(':')[0];     if (curProtocol === 'https'){    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';   }   else{   bp.src = 'http://push.zhanzhang.baidu.com/push.js';   }     var s = document.getElementsByTagName("script")[0];     s.parentNode.insertBefore(bp, s); })(); </script> 
 
 
       
@@ -567,7 +595,7 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Hexo%20github%20coding.html" rel="next" title="Hexo 博客部署在github和coding上 同时推送到两个仓库">
+              <a href="/Hexo github coding.html" rel="next" title="Hexo 博客部署在github和coding上 同时推送到两个仓库">
                 <i class="fa fa-chevron-left"></i> Hexo 博客部署在github和coding上 同时推送到两个仓库
               </a>
             
@@ -577,8 +605,8 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/test.html" rel="prev" title="MongoDB基本操作">
-                MongoDB基本操作 <i class="fa fa-chevron-right"></i>
+              <a href="/pycharm连接mysql，navicat破解工具.html" rel="prev" title="pycharm连接mysql，navicat破解工具">
+                pycharm连接mysql，navicat破解工具 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -651,9 +679,9 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/%20%7C%7C%20archive">
+                  <a href="/archives/">
                 
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -663,7 +691,7 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
                 
                 
                 <div class="site-state-item site-state-categories">
-                  
+                  <a href="/categories/index.html">
                     
                     
                       
@@ -674,9 +702,17 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -684,7 +720,7 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
@@ -715,9 +751,17 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
                     
                       
                     
-                    <span class="site-state-item-count">14</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -777,6 +821,10 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
                     <a href="https://jerryc.me/" title="JerryC" target="_blank">JerryC</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="http://byodian.site/" title="byodian" target="_blank">byodian</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -817,7 +865,7 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -832,7 +880,7 @@ db.集合名.remove(query,{justOne:&lt;boolean&gt;,writeConcern:&lt;document&gt;
 
 
 <!--
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v4.2.0</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
 
 
 

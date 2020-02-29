@@ -120,9 +120,10 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
 <meta property="og:url" content="http://voicezyx.top/index.html">
 <meta property="og:site_name" content="voicezyx&#39;s Blog">
 <meta property="og:description" content="漫漫长路，不断前行">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="voicezyx">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="voicezyx&#39;s Blog">
+<meta name="twitter:description" content="漫漫长路，不断前行">
 
 
 
@@ -179,7 +180,14 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
+
+
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -238,9 +246,17 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
         
         
           
-          <li class="menu-item menu-item-board">
-    <a href="/board/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />board</a>
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
   </li>
         
         
@@ -257,22 +273,6 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-    <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
   </li>
 
       
@@ -354,7 +354,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/Django%E4%BB%8E%E5%A4%B4%E5%AD%A6----%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01.html">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/sql基本知识与函数学习.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="voicezyx">
@@ -373,8 +373,8 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/Django%E4%BB%8E%E5%A4%B4%E5%AD%A6----%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01.html" itemprop="url">
-                  Django从头学----学习笔记1（创建项目，添加数据）
+                <a class="post-title-link" href="/sql基本知识与函数学习.html" itemprop="url">
+                  sql基本知识与函数学习
                 </a>
               
             
@@ -400,9 +400,13 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
                 
               
 
-              <time title="创建时间：2018-09-15 14:15:14" itemprop="dateCreated datePublished" datetime="2018-09-15T14:15:14+08:00">2018-09-15</time>
+              <time title="创建时间：2019-08-29 09:36:11 / 修改时间：09:38:04" itemprop="dateCreated datePublished" datetime="2019-08-29T09:36:11+08:00">2019-08-29</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -418,7 +422,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Django/" itemprop="url" rel="index"><span itemprop="name">Django</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SQL/" itemprop="url" rel="index"><span itemprop="name">SQL</span></a></span>
 
                 
                 
@@ -457,20 +461,13 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
       
         
           
-          1、MVT
-Django是一款python的web开发框架
-与MVC有所不同，属于MVT框架
-m表示model，负责与数据库交互
-v 表示view，是核心，负责接收请求、获取数据、返回结果
-t 表示template，负责呈现内容到浏览器
-
-
-2、安装Django在windows终端输入：pip install Django==1.11.4（如果不输入等号后边的，默认安装最新版本）
-3、创建项目在合
+          1、创建表create table student(    ID INT PRIMARY KEY NOT NULL,    NAME VARCHAR(10) NOT NULL,    AGE INT NOT NULL)
+2、修改表/alter table dbo.userinfoalter column username varchar(100)
+alter table dbo.userinfoa
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/Django%E4%BB%8E%E5%A4%B4%E5%AD%A6----%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01.html#more" rel="contents">
+            <a class="btn" href="/sql基本知识与函数学习.html#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -535,7 +532,7 @@ t 表示template，负责呈现内容到浏览器
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/%E5%AD%97%E5%85%B8%E4%B8%8E%E5%88%97%E8%A1%A8.html">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/在局域网中查看Django开发的网站.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="voicezyx">
@@ -554,7 +551,731 @@ t 表示template，负责呈现内容到浏览器
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/%E5%AD%97%E5%85%B8%E4%B8%8E%E5%88%97%E8%A1%A8.html" itemprop="url">
+                <a class="post-title-link" href="/在局域网中查看Django开发的网站.html" itemprop="url">
+                  在局域网中查看Django开发的网站
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-20 17:40:54 / 修改时间：17:42:47" itemprop="dateCreated datePublished" datetime="2019-08-20T17:40:54+08:00">2019-08-20</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Django/" itemprop="url" rel="index"><span itemprop="name">Django</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Django是开发网站与信息系统的利器，可以通过局域网查看，也可以部署到服务器绑定域名通过外网查看，这次先实现项目通过局域网查看。
+步骤：
+1.在项目的settings.py文件中，找到ALLOWED_HOSTS=[ ]，在中括号中加入你电脑所在局域网中的IP。我的IP为192.168.0.100，所以设置如图所示：
+
+2.指令：python manage.py runserver 192.168
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/在局域网中查看Django开发的网站.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+
+
+<div>
+  
+</div>
+
+
+
+    
+
+    
+
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/Git简单的基本操作.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="voicezyx">
+      <meta itemprop="description" content="漫漫长路，不断前行">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="voicezyx's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/Git简单的基本操作.html" itemprop="url">
+                  Git简单的基本操作
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-09 18:44:50 / 修改时间：18:47:40" itemprop="dateCreated datePublished" datetime="2019-08-09T18:44:50+08:00">2019-08-09</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+初始化仓库 git init
+添加文件 git add readme.txt
+提交文件 git commit -m “xxxxxxx”(xxxxxx表示提交的说明文字)
+查看当前结果状态  git status
+查看修改前后的不同之处  git diff
+查看操作历史记录  git log
+回退到之前的版本  git reset –hard ‘填写之前的版本号’ 如：$ git reset –h
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/Git简单的基本操作.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+
+
+<div>
+  
+</div>
+
+
+
+    
+
+    
+
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/Java实现排序算法（冒泡排序、选择排序、插入排序、二分查找排序）.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="voicezyx">
+      <meta itemprop="description" content="漫漫长路，不断前行">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="voicezyx's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/Java实现排序算法（冒泡排序、选择排序、插入排序、二分查找排序）.html" itemprop="url">
+                  Java实现排序算法（冒泡排序、选择排序、插入排序、二分查找排序）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-21 15:13:27" itemprop="dateCreated datePublished" datetime="2018-12-21T15:13:27+08:00">2018-12-21</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          1、冒泡排序12345678910111213141516171819//冒泡排序package 排序算法;public class Test &#123;	public static void main(String[] args) &#123;		int[] nums=&#123;34,4,56,17,90,65&#125;;		for(int i=0;i&lt;nums.length-1;i
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/Java实现排序算法（冒泡排序、选择排序、插入排序、二分查找排序）.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+
+
+<div>
+  
+</div>
+
+
+
+    
+
+    
+
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/hexo添加点击爆炸效果.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="voicezyx">
+      <meta itemprop="description" content="漫漫长路，不断前行">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="voicezyx's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/hexo添加点击爆炸效果.html" itemprop="url">
+                  hexo添加点击爆炸效果 duang duang duang
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-16 15:12:40" itemprop="dateCreated datePublished" datetime="2018-09-16T15:12:40+08:00">2018-09-16</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-17 15:20:27" itemprop="dateModified" datetime="2018-09-17T15:20:27+08:00">2018-09-17</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          首先在themes/next/source/js/src里面建一个叫fireworks.js的文件，代码如下：
+1&quot;use strict&quot;;function updateCoords(e)&#123;pointerX=(e.clientX||e.touches[0].clientX)-canvasEl.getBoundingClientRect().left,pointerY=
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/hexo添加点击爆炸效果.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+
+
+<div>
+  
+</div>
+
+
+
+    
+
+    
+
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/字典与列表.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="voicezyx">
+      <meta itemprop="description" content="漫漫长路，不断前行">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="voicezyx's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/字典与列表.html" itemprop="url">
                   字典和列表
                 </a>
               
@@ -581,9 +1302,13 @@ t 表示template，负责呈现内容到浏览器
                 
               
 
-              <time title="创建时间：2018-09-15 12:32:26" itemprop="dateCreated datePublished" datetime="2018-09-15T12:32:26+08:00">2018-09-15</time>
+              <time title="创建时间：2018-09-15 15:05:36 / 修改时间：12:32:24" itemprop="dateCreated datePublished" datetime="2018-09-15T15:05:36+08:00">2018-09-15</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -651,7 +1376,7 @@ t 表示template，负责呈现内容到浏览器
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/%E5%AD%97%E5%85%B8%E4%B8%8E%E5%88%97%E8%A1%A8.html#more" rel="contents">
+            <a class="btn" href="/字典与列表.html#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -716,7 +1441,7 @@ t 表示template，负责呈现内容到浏览器
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/%E5%90%8D%E7%89%87%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/名片管理系统.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="voicezyx">
@@ -735,7 +1460,7 @@ t 表示template，负责呈现内容到浏览器
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/%E5%90%8D%E7%89%87%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html" itemprop="url">
+                <a class="post-title-link" href="/名片管理系统.html" itemprop="url">
                   名片管理系统
                 </a>
               
@@ -762,9 +1487,13 @@ t 表示template，负责呈现内容到浏览器
                 
               
 
-              <time title="创建时间：2018-09-15 12:32:18" itemprop="dateCreated datePublished" datetime="2018-09-15T12:32:18+08:00">2018-09-15</time>
+              <time title="创建时间：2018-09-15 15:05:36 / 修改时间：12:32:17" itemprop="dateCreated datePublished" datetime="2018-09-15T15:05:36+08:00">2018-09-15</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -819,11 +1548,11 @@ t 表示template，负责呈现内容到浏览器
       
         
           
-          步骤：1、框架搭建2、新增名片3、显示所有名片4、查询名片5、查询成功后修改、删除名片6、让 Python 程序能够直接运行main.py12345678910111213141516171819main.py  一般写业务逻辑from tool import *while True:    show_menu()    operation&#x3D;int(input(&quot;请输入您的操作
+          步骤：1、框架搭建2、新增名片3、显示所有名片4、查询名片5、查询成功后修改、删除名片6、让 Python 程序能够直接运行main.py12345678910111213141516171819main.py  一般写业务逻辑from tool import *while True:    show_menu()    operation=int(input(&quot;请输入您的操作：&quo
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/%E5%90%8D%E7%89%87%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html#more" rel="contents">
+            <a class="btn" href="/名片管理系统.html#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -888,7 +1617,7 @@ t 表示template，负责呈现内容到浏览器
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/%E5%8F%98%E9%87%8F%E5%92%8C%E5%85%B3%E9%94%AE%E5%AD%97.html">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/变量和关键字.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="voicezyx">
@@ -907,7 +1636,7 @@ t 表示template，负责呈现内容到浏览器
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/%E5%8F%98%E9%87%8F%E5%92%8C%E5%85%B3%E9%94%AE%E5%AD%97.html" itemprop="url">
+                <a class="post-title-link" href="/变量和关键字.html" itemprop="url">
                   变量和关键字
                 </a>
               
@@ -934,9 +1663,13 @@ t 表示template，负责呈现内容到浏览器
                 
               
 
-              <time title="创建时间：2018-09-15 12:32:12" itemprop="dateCreated datePublished" datetime="2018-09-15T12:32:12+08:00">2018-09-15</time>
+              <time title="创建时间：2018-09-15 15:05:36 / 修改时间：12:32:11" itemprop="dateCreated datePublished" datetime="2018-09-15T15:05:36+08:00">2018-09-15</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -997,15 +1730,16 @@ t 表示template，负责呈现内容到浏览器
 
 可以反复取出数据
 
-可以反复更改数据2、变量的命名规则：1、开头是字母 或下划线 后面可以是字母 数字 下划线
+可以反复更改数据
+2、变量的命名规则：1、开头是字母 或下划线 后面可以是字母 数字 下划线
 _abc  True
 12abc  错误 False
 name#pass   特殊字符
-2、不能以关键字名（关键字在python中有特殊的含有  def
+2、不能以关键字名（关键字在python中有特殊的含有  de
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/%E5%8F%98%E9%87%8F%E5%92%8C%E5%85%B3%E9%94%AE%E5%AD%97.html#more" rel="contents">
+            <a class="btn" href="/变量和关键字.html#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1070,7 +1804,7 @@ name#pass   特殊字符
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/while%E5%BE%AA%E7%8E%AF%E3%80%81for%E5%BE%AA%E7%8E%AF.html">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/while循环、for循环.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="voicezyx">
@@ -1089,7 +1823,7 @@ name#pass   特殊字符
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/while%E5%BE%AA%E7%8E%AF%E3%80%81for%E5%BE%AA%E7%8E%AF.html" itemprop="url">
+                <a class="post-title-link" href="/while循环、for循环.html" itemprop="url">
                   python--while循环、for循环
                 </a>
               
@@ -1116,9 +1850,13 @@ name#pass   特殊字符
                 
               
 
-              <time title="创建时间：2018-09-15 12:32:06" itemprop="dateCreated datePublished" datetime="2018-09-15T12:32:06+08:00">2018-09-15</time>
+              <time title="创建时间：2018-09-15 15:05:36 / 修改时间：12:32:04" itemprop="dateCreated datePublished" datetime="2018-09-15T15:05:36+08:00">2018-09-15</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -1179,13 +1917,14 @@ name#pass   特殊字符
 
 条件满足时候:执行该代码
 
-**3****变量的更新**2、while 循环的应用1、while循环输出while循环输出20次我爱你
+**3****变量的更新**
+2、while 循环的应用1、while循环输出while循环输出20次我爱你
 
-2、while循环输出1-100累加和# 1-100之间所有数的和# 1变量的初始化i = 0sum = 0 #存储和# 判断条件while 
+2、while循环输出1-100累加和# 1-100之间所有数的和# 1变量的初始化i = 0sum = 0 #存储和# 判断条件while
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/while%E5%BE%AA%E7%8E%AF%E3%80%81for%E5%BE%AA%E7%8E%AF.html#more" rel="contents">
+            <a class="btn" href="/while循环、for循环.html#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1250,7 +1989,7 @@ name#pass   特殊字符
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/pycharm%E8%81%94%E7%BD%91%E4%B8%8D%E8%83%BD%E7%99%BB%E9%99%86%E7%9A%84%E6%BF%80%E6%B4%BB%E9%97%AE%E9%A2%98.html">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/pycharm联网不能登陆的激活问题.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="voicezyx">
@@ -1269,7 +2008,7 @@ name#pass   特殊字符
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/pycharm%E8%81%94%E7%BD%91%E4%B8%8D%E8%83%BD%E7%99%BB%E9%99%86%E7%9A%84%E6%BF%80%E6%B4%BB%E9%97%AE%E9%A2%98.html" itemprop="url">
+                <a class="post-title-link" href="/pycharm联网不能登陆的激活问题.html" itemprop="url">
                   pycharm联网不能登陆的激活问题
                 </a>
               
@@ -1296,9 +2035,13 @@ name#pass   特殊字符
                 
               
 
-              <time title="创建时间：2018-09-15 12:31:58" itemprop="dateCreated datePublished" datetime="2018-09-15T12:31:58+08:00">2018-09-15</time>
+              <time title="创建时间：2018-09-15 15:05:36 / 修改时间：12:31:57" itemprop="dateCreated datePublished" datetime="2018-09-15T15:05:36+08:00">2018-09-15</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -1362,708 +2105,7 @@ sudo vi /etc/hosts
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/pycharm%E8%81%94%E7%BD%91%E4%B8%8D%E8%83%BD%E7%99%BB%E9%99%86%E7%9A%84%E6%BF%80%E6%B4%BB%E9%97%AE%E9%A2%98.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-
-
-<div>
-  
-</div>
-
-
-
-    
-
-    
-
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/pycharm%E8%BF%9E%E6%8E%A5mysql%EF%BC%8Cnavicat%E7%A0%B4%E8%A7%A3%E5%B7%A5%E5%85%B7.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="voicezyx">
-      <meta itemprop="description" content="漫漫长路，不断前行">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="voicezyx's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/pycharm%E8%BF%9E%E6%8E%A5mysql%EF%BC%8Cnavicat%E7%A0%B4%E8%A7%A3%E5%B7%A5%E5%85%B7.html" itemprop="url">
-                  pycharm连接mysql，navicat破解工具
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-09-15 12:31:52" itemprop="dateCreated datePublished" datetime="2018-09-15T12:31:52+08:00">2018-09-15</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Pycharm连接mysql
-1、 下载安装pycharm
-2、 可以到官网下载，我用的是2017版，链接在下边，可以自行下载安装。
-链接：https://pan.baidu.com/s/178GGasShAleTF2RtS8jDiw 密码：2ujf
-3、 安装mysql和navicat Premium（数据库管理工具）
-下载navicat后，总会提示试用期14天，可以用下边分享的软件进行破解，下
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/pycharm%E8%BF%9E%E6%8E%A5mysql%EF%BC%8Cnavicat%E7%A0%B4%E8%A7%A3%E5%B7%A5%E5%85%B7.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-
-
-<div>
-  
-</div>
-
-
-
-    
-
-    
-
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/test.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="voicezyx">
-      <meta itemprop="description" content="漫漫长路，不断前行">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="voicezyx's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/test.html" itemprop="url">
-                  MongoDB基本操作
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-09-15 12:31:44" itemprop="dateCreated datePublished" datetime="2018-09-15T12:31:44+08:00">2018-09-15</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/MongoDB/" itemprop="url" rel="index"><span itemprop="name">MongoDB</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          一、操作MongoDB数据库1、创建数据库语法：use 数据库名
-注意：如果数据库不存在，则创建，否则切换到该数据库
-如果刚才创建的数据库不在列表内，如果要显示刚创建的数据库，我们需要向刚创建的数据库插入一些数据  (db.student.insert({name:&quot;tom&quot;,age:18,gender:1,address：&quot;北京&quot;,isDelete:0})
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/test.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-
-
-<div>
-  
-</div>
-
-
-
-    
-
-    
-
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/MongoDB%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="voicezyx">
-      <meta itemprop="description" content="漫漫长路，不断前行">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="voicezyx's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/MongoDB%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html" itemprop="url">
-                  MongoDB基本操作
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-09-15 12:31:44" itemprop="dateCreated datePublished" datetime="2018-09-15T12:31:44+08:00">2018-09-15</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/MongoDB/" itemprop="url" rel="index"><span itemprop="name">MongoDB</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          一、操作MongoDB数据库1、创建数据库语法：use 数据库名
-注意：如果数据库不存在，则创建，否则切换到该数据库
-如果刚才创建的数据库不在列表内，如果要显示刚创建的数据库，我们需要向刚创建的数据库插入一些数据  (db.student.insert({name:&quot;tom&quot;,age:18,gender:1,address：&quot;北京&quot;,isDelete:0})
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/MongoDB%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-
-
-<div>
-  
-</div>
-
-
-
-    
-
-    
-
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/Hexo%20github%20coding.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="voicezyx">
-      <meta itemprop="description" content="漫漫长路，不断前行">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="voicezyx's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Hexo%20github%20coding.html" itemprop="url">
-                  Hexo 博客部署在github和coding上 同时推送到两个仓库
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-09-15 12:31:28" itemprop="dateCreated datePublished" datetime="2018-09-15T12:31:28+08:00">2018-09-15</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          1、注册coding账号2、新建项目不选择 启用 README.md 文件初始化项目，以及任何 License 和 .gitignore 文件。
-
-3、从github上克隆项目下来
- 在本地git终端执行：
-git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己用户名和仓库名）4、将克隆下来的仓库推送到 CODING
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Hexo%20github%20coding.html#more" rel="contents">
+            <a class="btn" href="/pycharm联网不能登陆的激活问题.html#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -2117,7 +2159,7 @@ git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot; aria-label&#x3D;&quot;下一页&quot;&gt;&lt;&#x2F;i&gt;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -2158,9 +2200,9 @@ git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/%20%7C%7C%20archive">
+                  <a href="/archives/">
                 
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2170,7 +2212,7 @@ git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己
                 
                 
                 <div class="site-state-item site-state-categories">
-                  
+                  <a href="/categories/index.html">
                     
                     
                       
@@ -2181,9 +2223,17 @@ git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -2191,7 +2241,7 @@ git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
@@ -2222,9 +2272,17 @@ git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己
                     
                       
                     
-                    <span class="site-state-item-count">14</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -2284,6 +2342,10 @@ git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己
                     <a href="https://jerryc.me/" title="JerryC" target="_blank">JerryC</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="http://byodian.site/" title="byodian" target="_blank">byodian</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -2308,7 +2370,7 @@ git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -2323,7 +2385,7 @@ git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己
 
 
 <!--
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v4.2.0</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
 
 
 

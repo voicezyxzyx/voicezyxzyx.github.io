@@ -114,13 +114,14 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
 
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-  <meta name="description" content="1、注册coding账号2、新建项目不选择 启用 README.md 文件初始化项目，以及任何 License 和 .gitignore 文件。  3、从github上克隆项目下来  在本地git终端执行： git clone https:&#x2F;&#x2F;github.com&#x2F;xxxxxx&#x2F;xxxxxx.git --bare   （xxxxxx表示你自己用户名和仓库名）4、将克隆下来的仓库推送到 CODING">
+  <meta name="description" content="1、注册coding账号2、新建项目不选择 启用 README.md 文件初始化项目，以及任何 License 和 .gitignore 文件。  3、从github上克隆项目下来  在本地git终端执行： git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己用户名和仓库名） 4、将克隆下来的仓库推送到 CODIN">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 博客部署在github和coding上 同时推送到两个仓库">
-<meta property="og:url" content="http://voicezyx.top/Hexo%20github%20coding.html">
+<meta property="og:url" content="http://voicezyx.top/Hexo github coding.html">
 <meta property="og:site_name" content="voicezyx&#39;s Blog">
-<meta property="og:description" content="1、注册coding账号2、新建项目不选择 启用 README.md 文件初始化项目，以及任何 License 和 .gitignore 文件。  3、从github上克隆项目下来  在本地git终端执行： git clone https:&#x2F;&#x2F;github.com&#x2F;xxxxxx&#x2F;xxxxxx.git --bare   （xxxxxx表示你自己用户名和仓库名）4、将克隆下来的仓库推送到 CODING">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:description" content="1、注册coding账号2、新建项目不选择 启用 README.md 文件初始化项目，以及任何 License 和 .gitignore 文件。  3、从github上克隆项目下来  在本地git终端执行： git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己用户名和仓库名） 4、将克隆下来的仓库推送到 CODIN">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E5%88%9B%E5%BB%BAcoding%E4%BB%93%E5%BA%93.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E5%85%8B%E9%9A%86github%E9%A1%B9%E7%9B%AE.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/url.png">
@@ -129,11 +130,10 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
 <meta property="og:image" content="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E5%9F%9F%E5%90%8D%E6%B7%BB%E5%8A%A0.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E6%88%90%E5%8A%9F%E6%95%88%E6%9E%9C.png">
-<meta property="article:published_time" content="2018-09-15T04:31:28.000Z">
-<meta property="article:modified_time" content="2018-09-15T04:31:28.000Z">
-<meta property="article:author" content="voicezyx">
-<meta property="article:tag" content="Hexo">
+<meta property="og:updated_time" content="2018-09-15T04:31:26.938Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 博客部署在github和coding上 同时推送到两个仓库">
+<meta name="twitter:description" content="1、注册coding账号2、新建项目不选择 启用 README.md 文件初始化项目，以及任何 License 和 .gitignore 文件。  3、从github上克隆项目下来  在本地git终端执行： git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己用户名和仓库名） 4、将克隆下来的仓库推送到 CODIN">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E5%88%9B%E5%BB%BAcoding%E4%BB%93%E5%BA%93.png">
 
 
@@ -191,7 +191,14 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
+
+
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -249,9 +256,17 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
         
         
           
-          <li class="menu-item menu-item-board">
-    <a href="/board/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />board</a>
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
   </li>
         
         
@@ -268,22 +283,6 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-    <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
   </li>
 
       
@@ -365,7 +364,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/Hexo%20github%20coding.html">
+    <link itemprop="mainEntityOfPage" href="http://voicezyx.top/Hexo github coding.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="voicezyx">
@@ -407,9 +406,13 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
                 
               
 
-              <time title="创建时间：2018-09-15 12:31:28" itemprop="dateCreated datePublished" datetime="2018-09-15T12:31:28+08:00">2018-09-15</time>
+              <time title="创建时间：2018-09-15 15:05:36 / 修改时间：12:31:26" itemprop="dateCreated datePublished" datetime="2018-09-15T15:05:36+08:00">2018-09-15</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -474,11 +477,13 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
 <p><img src="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E5%88%9B%E5%BB%BAcoding%E4%BB%93%E5%BA%93.png" alt=""></p>
 <h2 id="3、从github上克隆项目下来"><a href="#3、从github上克隆项目下来" class="headerlink" title="3、从github上克隆项目下来"></a>3、从github上克隆项目下来</h2><p><img src="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E5%85%8B%E9%9A%86github%E9%A1%B9%E7%9B%AE.png" alt=""></p>
 <p> 在本地git终端执行：</p>
-<pre><code>git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己用户名和仓库名）</code></pre><h2 id="4、将克隆下来的仓库推送到-CODING"><a href="#4、将克隆下来的仓库推送到-CODING" class="headerlink" title="4、将克隆下来的仓库推送到 CODING"></a>4、将克隆下来的仓库推送到 CODING</h2><p>克隆完成后，将仓库推送到 CODING 上。<br>使用仓库页面提供的 URL。</p>
+<pre><code>git clone https://github.com/xxxxxx/xxxxxx.git --bare   （xxxxxx表示你自己用户名和仓库名）
+</code></pre><h2 id="4、将克隆下来的仓库推送到-CODING"><a href="#4、将克隆下来的仓库推送到-CODING" class="headerlink" title="4、将克隆下来的仓库推送到 CODING"></a>4、将克隆下来的仓库推送到 CODING</h2><p>克隆完成后，将仓库推送到 CODING 上。<br>使用仓库页面提供的 URL。</p>
 <p><img src="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/url.png" alt=""></p>
 <p>在本地创一个coding存放文件的地方（文件夹）</p>
 <p>在此处打开终端：</p>
-<pre><code>git push https://git.coding.net/xxxxxx/xxxxx.git --all    （此处第一个xxxxx表示自己的coding用户名，第二个xxxxx表示自己的仓库名）</code></pre><p>完成后，再执行</p>
+<pre><code>git push https://git.coding.net/xxxxxx/xxxxx.git --all    （此处第一个xxxxx表示自己的coding用户名，第二个xxxxx表示自己的仓库名）
+</code></pre><p>完成后，再执行</p>
 <p>推送所有的标签。</p>
 <p>   git push <a href="https://git.coding.net/xxxxxx/xxxxx.git" target="_blank" rel="noopener">https://git.coding.net/xxxxxx/xxxxx.git</a>  <code>--tags</code></p>
 <p>这样，整个仓库就全部导入到 CODING 中了。</p>
@@ -489,10 +494,8 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
 <p><img src="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E7%A7%98%E9%92%A5%E6%B7%BB%E5%8A%A0.png" alt=""></p>
 <h2 id="6、检测是否添加成功"><a href="#6、检测是否添加成功" class="headerlink" title="6、检测是否添加成功"></a>6、检测是否添加成功</h2><p>添加后，在<code>git bash</code>命令输入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@git.coding.net</span><br></pre></td></tr></table></figure>
-
 <p>如果得到下面提示就表示公钥添加成功了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Coding.net Tips : [Hello ! You&#39;ve conected to Coding.net by SSH successfully! ]</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Coding.net Tips : [Hello ! You&apos;ve conected to Coding.net by SSH successfully! ]</span><br></pre></td></tr></table></figure>
 <h2 id="7、同时部署到2个平台"><a href="#7、同时部署到2个平台" class="headerlink" title="7、同时部署到2个平台"></a>7、同时部署到2个平台</h2><p>想要发送文章同时推送到两个仓库中，就要修改博客根目录下面的_config.yml文件中的deploy如下</p>
 <p>根据Hexo官方文档需要修改成下面的形式： （冒号后面需要有一个空格）</p>
 <p><img src="https://raw.githubusercontent.com/voicezyxzyx/voicezyxzyx.github.io/master/images/%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9.png" alt=""></p>
@@ -561,7 +564,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Django%E4%BB%8E%E5%A4%B4%E5%AD%A6----%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B04.html" rel="next" title="Django从头学----学习笔记4">
+              <a href="/Django从头学----学习笔记4.html" rel="next" title="Django从头学----学习笔记4">
                 <i class="fa fa-chevron-left"></i> Django从头学----学习笔记4
               </a>
             
@@ -571,7 +574,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/MongoDB%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html" rel="prev" title="MongoDB基本操作">
+              <a href="/MongoDB基本操作.html" rel="prev" title="MongoDB基本操作">
                 MongoDB基本操作 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -645,9 +648,9 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/%20%7C%7C%20archive">
+                  <a href="/archives/">
                 
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -657,7 +660,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
                 
                 
                 <div class="site-state-item site-state-categories">
-                  
+                  <a href="/categories/index.html">
                     
                     
                       
@@ -668,9 +671,17 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -678,7 +689,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
@@ -709,9 +720,17 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
                     
                       
                     
-                    <span class="site-state-item-count">14</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -771,6 +790,10 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
                     <a href="https://jerryc.me/" title="JerryC" target="_blank">JerryC</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="http://byodian.site/" title="byodian" target="_blank">byodian</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -811,7 +834,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -826,7 +849,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="0" src="//cdn.bootcss.com/canva
 
 
 <!--
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v4.2.0</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
 
 
 
